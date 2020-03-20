@@ -22,6 +22,13 @@
 		473950F224247AB60030FC35 /* MesmerCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 473950F024247AB60030FC35 /* MesmerCommands.h */; };
 		473950F5242481290030FC35 /* XCUIDevice+MesmerHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 473950F3242481290030FC35 /* XCUIDevice+MesmerHelpers.h */; };
 		473950F6242481290030FC35 /* XCUIDevice+MesmerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 473950F4242481290030FC35 /* XCUIDevice+MesmerHelpers.m */; };
+		473950FE242482A10030FC35 /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 473950F9242482A10030FC35 /* labels.txt */; };
+		473950FF242482A10030FC35 /* version.txt in Resources */ = {isa = PBXBuildFile; fileRef = 473950FA242482A10030FC35 /* version.txt */; };
+		47395100242482A10030FC35 /* model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 473950FB242482A10030FC35 /* model.tflite */; };
+		47395101242482A10030FC35 /* BSWDataModelHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 473950FC242482A10030FC35 /* BSWDataModelHandler.h */; };
+		47395102242482A10030FC35 /* BSWDataModelHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 473950FD242482A10030FC35 /* BSWDataModelHandler.mm */; };
+		47395104242482B80030FC35 /* tensorflow_lite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47395103242482B80030FC35 /* tensorflow_lite.framework */; };
+		47395106242482C10030FC35 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47395105242482C10030FC35 /* Accelerate.framework */; };
 		6385F4A7220A40760095BBDB /* XCUIApplicationProcessDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6385F4A5220A40760095BBDB /* XCUIApplicationProcessDelay.m */; };
 		63CCF91221ECE4C700E94ABD /* FBImageIOScaler.h in Headers */ = {isa = PBXBuildFile; fileRef = 63CCF91021ECE4C700E94ABD /* FBImageIOScaler.h */; };
 		63CCF91321ECE4C700E94ABD /* FBImageIOScaler.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF91121ECE4C700E94ABD /* FBImageIOScaler.m */; };
@@ -829,6 +836,13 @@
 		473950F024247AB60030FC35 /* MesmerCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MesmerCommands.h; sourceTree = "<group>"; };
 		473950F3242481290030FC35 /* XCUIDevice+MesmerHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "XCUIDevice+MesmerHelpers.h"; path = "MesmerCategories/XCUIDevice+MesmerHelpers.h"; sourceTree = "<group>"; };
 		473950F4242481290030FC35 /* XCUIDevice+MesmerHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "XCUIDevice+MesmerHelpers.m"; path = "MesmerCategories/XCUIDevice+MesmerHelpers.m"; sourceTree = "<group>"; };
+		473950F9242482A10030FC35 /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		473950FA242482A10030FC35 /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		473950FB242482A10030FC35 /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
+		473950FC242482A10030FC35 /* BSWDataModelHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSWDataModelHandler.h; sourceTree = "<group>"; };
+		473950FD242482A10030FC35 /* BSWDataModelHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BSWDataModelHandler.mm; sourceTree = "<group>"; };
+		47395103242482B80030FC35 /* tensorflow_lite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tensorflow_lite.framework; path = WebDriverAgentLib/Frameworks/tensorflow_lite.framework; sourceTree = "<group>"; };
+		47395105242482C10030FC35 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		631B523421F6174300625362 /* FBImageIOScalerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBImageIOScalerTests.m; sourceTree = "<group>"; };
 		633E904A220DEE7F007CADF9 /* XCUIApplicationProcessDelay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCUIApplicationProcessDelay.h; sourceTree = "<group>"; };
 		6385F4A5220A40760095BBDB /* XCUIApplicationProcessDelay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCUIApplicationProcessDelay.m; sourceTree = "<group>"; };
@@ -1257,6 +1271,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47395106242482C10030FC35 /* Accelerate.framework in Frameworks */,
+				47395104242482B80030FC35 /* tensorflow_lite.framework in Frameworks */,
 				7155B40E224D5A850042A993 /* libAccessibility.tbd in Frameworks */,
 				AD35D0641CF1C2C300870A75 /* RoutingHTTPServer.framework in Frameworks */,
 				7155B424224D5BA10042A993 /* XCTest.framework in Frameworks */,
@@ -1328,6 +1344,27 @@
 				473950EF24247AB60030FC35 /* MesmerCommands.m */,
 			);
 			path = Mesmer;
+			sourceTree = "<group>";
+		};
+		473950F7242482A10030FC35 /* MesmerAI */ = {
+			isa = PBXGroup;
+			children = (
+				473950F8242482A10030FC35 /* Model */,
+				473950FC242482A10030FC35 /* BSWDataModelHandler.h */,
+				473950FD242482A10030FC35 /* BSWDataModelHandler.mm */,
+			);
+			name = MesmerAI;
+			path = WebDriverAgentLib/MesmerAI;
+			sourceTree = SOURCE_ROOT;
+		};
+		473950F8242482A10030FC35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				473950F9242482A10030FC35 /* labels.txt */,
+				473950FA242482A10030FC35 /* version.txt */,
+				473950FB242482A10030FC35 /* model.tflite */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		498495C81BB2E6FA009CC848 /* Resources */ = {
@@ -1477,6 +1514,8 @@
 		B6E83A410C45944B036B6B0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47395105242482C10030FC35 /* Accelerate.framework */,
+				47395103242482B80030FC35 /* tensorflow_lite.framework */,
 				716C9341224D5369004B8542 /* iOS */,
 				716C9340224D5358004B8542 /* tvOS */,
 			);
@@ -1837,6 +1876,7 @@
 		EEC288F81BF0ED2500B4DC79 /* WebDriverAgentLib */ = {
 			isa = PBXGroup;
 			children = (
+				473950F7242482A10030FC35 /* MesmerAI */,
 				EE9AB73E1CAEDF0C008C271F /* Categories */,
 				EE9AB74F1CAEDF0C008C271F /* Commands */,
 				EE9AB7721CAEDF0C008C271F /* Resources */,
@@ -2262,6 +2302,7 @@
 				EE158ACC1CBD456F00A3E3F0 /* FBUnknownCommands.h in Headers */,
 				641EE7052240CDCF00173FCB /* XCUIElement+FBTVFocuse.h in Headers */,
 				71A224E51DE2F56600844D55 /* NSPredicate+FBFormat.h in Headers */,
+				47395101242482A10030FC35 /* BSWDataModelHandler.h in Headers */,
 				EE35AD1F1E3B77D600A02D78 /* UILongPressGestureRecognizer-RecordingAdditions.h in Headers */,
 				EE35AD411E3B77D600A02D78 /* XCTestCase.h in Headers */,
 				EE35AD391E3B77D600A02D78 /* XCSymbolicatorHolder.h in Headers */,
@@ -2688,6 +2729,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473950FE242482A10030FC35 /* labels.txt in Resources */,
+				47395100242482A10030FC35 /* model.tflite in Resources */,
+				473950FF242482A10030FC35 /* version.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2901,6 +2945,7 @@
 				71241D7C1FAE3D2500B9559F /* FBTouchActionCommands.m in Sources */,
 				63CCF91321ECE4C700E94ABD /* FBImageIOScaler.m in Sources */,
 				EE158ACB1CBD456F00A3E3F0 /* FBTouchIDCommands.m in Sources */,
+				47395102242482A10030FC35 /* BSWDataModelHandler.mm in Sources */,
 				EE158ABD1CBD456F00A3E3F0 /* FBDebugCommands.m in Sources */,
 				716E0BCF1E917E810087A825 /* NSString+FBXMLSafeString.m in Sources */,
 				EE158ACD1CBD456F00A3E3F0 /* FBUnknownCommands.m in Sources */,
@@ -3498,6 +3543,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PLATFORM_DIR)/Developer/Library/PrivateFrameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/WebDriverAgentLib/Frameworks",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = WebDriverAgentLib/Info.plist;
@@ -3556,6 +3602,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PLATFORM_DIR)/Developer/Library/PrivateFrameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/WebDriverAgentLib/Frameworks",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = WebDriverAgentLib/Info.plist;
