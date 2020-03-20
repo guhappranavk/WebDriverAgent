@@ -20,6 +20,8 @@
 		31EC77FF224F7D0600380FCD /* XCUIApplicationProcessQuiescence.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC77FB224F7D0600380FCD /* XCUIApplicationProcessQuiescence.m */; };
 		473950F124247AB60030FC35 /* MesmerCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = 473950EF24247AB60030FC35 /* MesmerCommands.m */; };
 		473950F224247AB60030FC35 /* MesmerCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 473950F024247AB60030FC35 /* MesmerCommands.h */; };
+		473950F5242481290030FC35 /* XCUIDevice+MesmerHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 473950F3242481290030FC35 /* XCUIDevice+MesmerHelpers.h */; };
+		473950F6242481290030FC35 /* XCUIDevice+MesmerHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 473950F4242481290030FC35 /* XCUIDevice+MesmerHelpers.m */; };
 		6385F4A7220A40760095BBDB /* XCUIApplicationProcessDelay.m in Sources */ = {isa = PBXBuildFile; fileRef = 6385F4A5220A40760095BBDB /* XCUIApplicationProcessDelay.m */; };
 		63CCF91221ECE4C700E94ABD /* FBImageIOScaler.h in Headers */ = {isa = PBXBuildFile; fileRef = 63CCF91021ECE4C700E94ABD /* FBImageIOScaler.h */; };
 		63CCF91321ECE4C700E94ABD /* FBImageIOScaler.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CCF91121ECE4C700E94ABD /* FBImageIOScaler.m */; };
@@ -825,6 +827,8 @@
 		44757A831D42CE8300ECF35E /* XCUIDeviceRotationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCUIDeviceRotationTests.m; sourceTree = "<group>"; };
 		473950EF24247AB60030FC35 /* MesmerCommands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MesmerCommands.m; sourceTree = "<group>"; };
 		473950F024247AB60030FC35 /* MesmerCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MesmerCommands.h; sourceTree = "<group>"; };
+		473950F3242481290030FC35 /* XCUIDevice+MesmerHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "XCUIDevice+MesmerHelpers.h"; path = "MesmerCategories/XCUIDevice+MesmerHelpers.h"; sourceTree = "<group>"; };
+		473950F4242481290030FC35 /* XCUIDevice+MesmerHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "XCUIDevice+MesmerHelpers.m"; path = "MesmerCategories/XCUIDevice+MesmerHelpers.m"; sourceTree = "<group>"; };
 		631B523421F6174300625362 /* FBImageIOScalerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBImageIOScalerTests.m; sourceTree = "<group>"; };
 		633E904A220DEE7F007CADF9 /* XCUIApplicationProcessDelay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCUIApplicationProcessDelay.h; sourceTree = "<group>"; };
 		6385F4A5220A40760095BBDB /* XCUIApplicationProcessDelay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCUIApplicationProcessDelay.m; sourceTree = "<group>"; };
@@ -1544,6 +1548,8 @@
 				EEE376481D59FAE900ED88DD /* XCUIElement+FBWebDriverAttributes.m */,
 				641EE7042240CDCF00173FCB /* XCUIElement+FBTVFocuse.h */,
 				641EE7072240CDEB00173FCB /* XCUIElement+FBTVFocuse.m */,
+				473950F3242481290030FC35 /* XCUIDevice+MesmerHelpers.h */,
+				473950F4242481290030FC35 /* XCUIDevice+MesmerHelpers.m */,
 			);
 			name = Categories;
 			path = WebDriverAgentLib/Categories;
@@ -2228,6 +2234,7 @@
 				EE35AD601E3B77D600A02D78 /* XCTRunnerDaemonSession.h in Headers */,
 				64B2650A228CE4FF002A5025 /* FBTVNavigationTracker-Private.h in Headers */,
 				EE158AF51CBD456F00A3E3F0 /* FBApplication.h in Headers */,
+				473950F5242481290030FC35 /* XCUIDevice+MesmerHelpers.h in Headers */,
 				71B155DF23080CA600646AFB /* FBProtocolHelpers.h in Headers */,
 				EE35AD4B1E3B77D600A02D78 /* XCTestExpectationWaiter.h in Headers */,
 				EE35AD1E1E3B77D600A02D78 /* UIGestureRecognizer-RecordingAdditions.h in Headers */,
@@ -2881,6 +2888,7 @@
 				EEE376441D59F81400ED88DD /* XCUIDevice+FBRotation.m in Sources */,
 				13815F712328D20400CDAB61 /* FBActiveAppDetectionPoint.m in Sources */,
 				71B49EC81ED1A58100D51AD6 /* XCUIElement+FBUID.m in Sources */,
+				473950F6242481290030FC35 /* XCUIDevice+MesmerHelpers.m in Sources */,
 				EE158AE21CBD456F00A3E3F0 /* FBRouteRequest.m in Sources */,
 				EE158ADB1CBD456F00A3E3F0 /* FBResponseJSONPayload.m in Sources */,
 				EE7E271F1D06C69F001BEC7B /* FBXCTestCaseImplementationFailureHoldingProxy.m in Sources */,
